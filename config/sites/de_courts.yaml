@@ -1,0 +1,4 @@
+# The operator verifies the live form method and destination before pressing Enter.
+search_forms:
+  - https://courts.delaware.gov/opinions/
+session_ttl_seconds: 3600

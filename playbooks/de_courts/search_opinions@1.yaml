@@ -1,0 +1,20 @@
+site_id: de_courts
+task: search_opinions
+version: 1
+steps:
+  - id: enter_query
+    action: type
+    locator:
+      css: 'input[placeholder="Search for..."]'
+    value_template: '{query}'
+    expect:
+      element: 'input[placeholder="Search for..."]'
+    timeout_s: 5
+  - id: search
+    action: press_key
+    locator:
+      css: 'input[placeholder="Search for..."]'
+    value_template: Enter
+    expect:
+      element: 'table'
+    timeout_s: 10

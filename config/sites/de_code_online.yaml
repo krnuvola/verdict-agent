@@ -1,0 +1,21 @@
+# Published Title 8, Chapter 1 HTML endpoints, checked 2026-11-07.
+session_ttl_seconds: 3600
+chapter_pages:
+  '8/1':
+    - https://delcode.delaware.gov/title8/c001/sc01/index.html
+    - https://delcode.delaware.gov/title8/c001/sc02/index.html
+    - https://delcode.delaware.gov/title8/c001/sc03/index.html
+    - https://delcode.delaware.gov/title8/c001/sc04/index.html
+    - https://delcode.delaware.gov/title8/c001/sc05/index.html
+    - https://delcode.delaware.gov/title8/c001/sc06/index.html
+    - https://delcode.delaware.gov/title8/c001/sc07/index.html
+    - https://delcode.delaware.gov/title8/c001/sc08/index.html
+    - https://delcode.delaware.gov/title8/c001/sc09/index.html
+    - https://delcode.delaware.gov/title8/c001/sc10/index.html
+    - https://delcode.delaware.gov/title8/c001/sc11/index.html
+    - https://delcode.delaware.gov/title8/c001/sc12/index.html
+    - https://delcode.delaware.gov/title8/c001/sc13/index.html
+    - https://delcode.delaware.gov/title8/c001/sc14/index.html
+    - https://delcode.delaware.gov/title8/c001/sc15/index.html
+    - https://delcode.delaware.gov/title8/c001/sc16/index.html
+    - https://delcode.delaware.gov/title8/c001/sc17/index.html

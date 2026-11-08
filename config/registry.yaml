@@ -1,0 +1,74 @@
+# Draft registry from Doc 02 section 6. Human source reviews are pending.
+version: 1
+entries:
+  - entry_id: sec_edgar
+    name: SEC EDGAR
+    role: primary
+    authoritative: true
+    base_domains: [www.sec.gov, data.sec.gov, efts.sec.gov]
+    url_prefixes: ['https://www.sec.gov/Archives/', 'https://www.sec.gov/robots.txt', 'https://www.sec.gov/files/company_tickers.json', 'https://data.sec.gov/', 'https://efts.sec.gov/']
+    doc_types: [merger_agreement, proxy_statement, 8k, exhibit, filing_index]
+    access: api
+    requires_login: false
+    rate_limit: {requests_per_second: 2, burst: 4, max_concurrent: 2}
+    robots_respect: true
+    allowed_action_classes: [READ, SEARCH]
+    terms_verified: false
+    phase: MVP
+  - entry_id: de_code_online
+    name: Delaware Code Online
+    role: primary
+    authoritative: true
+    base_domains: [delcode.delaware.gov]
+    url_prefixes: ['https://delcode.delaware.gov/']
+    doc_types: [statute]
+    access: adapter
+    requires_login: false
+    rate_limit: {requests_per_second: 1, burst: 2, max_concurrent: 1}
+    robots_respect: true
+    allowed_action_classes: [READ, SEARCH]
+    terms_verified: false
+    phase: MVP
+  - entry_id: de_legislature
+    name: Delaware General Assembly
+    role: primary
+    authoritative: true
+    base_domains: [legis.delaware.gov]
+    url_prefixes: ['https://legis.delaware.gov/']
+    doc_types: [bill, session_law]
+    access: adapter
+    requires_login: false
+    rate_limit: {requests_per_second: 1, burst: 2, max_concurrent: 1}
+    robots_respect: true
+    allowed_action_classes: [READ, SEARCH]
+    terms_verified: false
+    phase: MVP
+  - entry_id: de_courts
+    name: Delaware Courts (opinions)
+    role: primary
+    authoritative: true
+    base_domains: [courts.delaware.gov]
+    url_prefixes: ['https://courts.delaware.gov/']
+    doc_types: [opinion]
+    access: adapter
+    requires_login: false
+    rate_limit: {requests_per_second: 1, burst: 2, max_concurrent: 1}
+    robots_respect: true
+    allowed_action_classes: [READ, SEARCH]
+    terms_verified: false
+    phase: MVP
+  - entry_id: courtlistener
+    name: CourtListener (Free Law Project)
+    role: crosscheck
+    authoritative: false
+    base_domains: [www.courtlistener.com, storage.courtlistener.com]
+    url_prefixes: ['https://www.courtlistener.com/', 'https://storage.courtlistener.com/']
+    doc_types: [opinion, citation_lookup]
+    access: api
+    requires_login: false
+    rate_limit: {requests_per_second: 1, burst: 2, max_concurrent: 1}
+    robots_respect: true
+    allowed_action_classes: [READ, SEARCH]
+    terms_verified: false
+    phase: MVP
+

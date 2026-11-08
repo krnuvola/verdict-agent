@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gba-track-a-agent"
+version = "0.1.0"
+description = "Track A guarded browsing agent service"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "alembic>=1.14,<2",
+    "cryptography>=44,<46",
+    "fastapi>=0.115,<1",
+    "httpx>=0.28,<1",
+    "keyring>=25,<26",
+    "playwright>=1.50,<2",
+    "psycopg[binary]>=3.2,<4",
+    "pydantic-settings>=2.7,<3",
+    "PyYAML>=6,<7",
+    "python-ulid>=3,<4",
+    "rapidfuzz>=3.12,<4",
+    "sqlalchemy>=2.0.37,<3",
+    "uvicorn[standard]>=0.34,<1",
+]
+
+[project.scripts]
+gba-agent = "gba_agent.cli:main"
+
+[dependency-groups]
+dev = [
+    "coverage[toml]>=7.6,<8",
+    "hypothesis>=6.124,<7",
+    "mypy>=1.14,<2",
+    "pytest>=8.3,<9",
+    "pytest-asyncio>=0.25,<1",
+    "respx>=0.22,<1",
+    "ruff>=0.9,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gba_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "adapter_canary: synthetic source and guarded playbook drift checks",
+    "live: opt-in read-only source smoke checks excluded from CI",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = "src"
+strict = true

@@ -1,0 +1,375 @@
+{
+  "nodes": [
+    {
+      "node_id": "Provision:de.dgcl.144b@2025-03-25",
+      "node_type": "Provision",
+      "label": "DGCL Section 144(b), post-amendment fixture",
+      "props": {
+        "code": "DGCL",
+        "section": "144(b)",
+        "version_label": "illustrative fixture version",
+        "safe_harbor_when": {
+          "any": [
+            {
+              "all": [
+                {"fact": "committee_all_disinterested", "eq": true},
+                {"fact": "committee_power_to_say_no", "eq": true},
+                {"fact": "committee_power_to_negotiate", "eq": true},
+                {"fact": "committee_approval_obtained", "eq": true}
+              ]
+            },
+            {"fact": "mom_approval_obtained", "eq": true}
+          ]
+        }
+      },
+      "scope_frame": {
+        "addressee_classes": ["controller"],
+        "transaction_types": ["other_controller_deal"],
+        "applies_when": null,
+        "exceptions": [],
+        "non_application": {
+          "fact": "litigation_commenced_on",
+          "lte": "2025-02-17"
+        },
+        "defined_terms": {},
+        "jurisdiction": "US-DE",
+        "valid_from": "2025-03-25",
+        "valid_to": null,
+        "source_spans": [],
+        "audited": false
+      },
+      "valid_from": "2025-03-25",
+      "valid_to": null,
+      "known_from": "2025-03-25",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Provision:de.dgcl.144c@2025-03-25",
+      "node_type": "Provision",
+      "label": "DGCL Section 144(c), post-amendment fixture",
+      "props": {
+        "code": "DGCL",
+        "section": "144(c)",
+        "version_label": "illustrative fixture version",
+        "safe_harbor_when": {
+          "all": [
+            {
+              "all": [
+                {"fact": "committee_all_disinterested", "eq": true},
+                {"fact": "committee_power_to_say_no", "eq": true},
+                {"fact": "committee_power_to_negotiate", "eq": true},
+                {"fact": "committee_approval_obtained", "eq": true}
+              ]
+            },
+            {
+              "any": [
+                {"fact": "disinterested_stockholder_approval_obtained", "eq": true},
+                {"fact": "mom_approval_obtained", "eq": true}
+              ]
+            }
+          ]
+        }
+      },
+      "scope_frame": {
+        "addressee_classes": ["controller"],
+        "transaction_types": ["going_private"],
+        "applies_when": null,
+        "exceptions": [],
+        "non_application": {
+          "fact": "litigation_commenced_on",
+          "lte": "2025-02-17"
+        },
+        "defined_terms": {},
+        "jurisdiction": "US-DE",
+        "valid_from": "2025-03-25",
+        "valid_to": null,
+        "source_spans": [],
+        "audited": false
+      },
+      "valid_from": "2025-03-25",
+      "valid_to": null,
+      "known_from": "2025-03-25",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Holding:match-group-2024",
+      "node_type": "Holding",
+      "label": "Match Group holding, illustrative seed fixture",
+      "props": {
+        "case_node_id": "Case:match-group-2024",
+        "proposition": "Illustrative fixture holding",
+        "bjr_when": {
+          "all": [
+            {"fact": "special_committee_formed", "eq": true},
+            {"fact": "committee_all_disinterested", "eq": true},
+            {"fact": "committee_power_to_say_no", "eq": true},
+            {"fact": "committee_power_to_negotiate", "eq": true},
+            {"fact": "committee_approval_obtained", "eq": true},
+            {"fact": "mom_condition_in_agreement", "eq": true},
+            {"fact": "mom_vote_informed", "eq": true},
+            {"fact": "mom_vote_uncoerced", "eq": true},
+            {"fact": "mom_approval_obtained", "eq": true}
+          ]
+        }
+      },
+      "scope_frame": {
+        "addressee_classes": ["controller"],
+        "transaction_types": ["other_controller_deal", "going_private"],
+        "applies_when": null,
+        "exceptions": [],
+        "non_application": null,
+        "defined_terms": {},
+        "jurisdiction": "US-DE",
+        "valid_from": "2024-01-01",
+        "valid_to": null,
+        "source_spans": [],
+        "audited": false
+      },
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "known_from": "2024-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Holding:mfw-2014",
+      "node_type": "Holding",
+      "label": "MFW framework, illustrative seed fixture",
+      "props": {
+        "case_node_id": "Case:mfw-2014",
+        "proposition": "Illustrative fixture holding",
+        "bjr_when": {
+          "all": [
+            {"fact": "special_committee_formed", "eq": true},
+            {"fact": "committee_all_disinterested", "eq": true},
+            {"fact": "committee_power_to_say_no", "eq": true},
+            {"fact": "committee_power_to_negotiate", "eq": true},
+            {"fact": "committee_approval_obtained", "eq": true},
+            {"fact": "committee_formed_before_substantive_negotiation", "eq": true},
+            {"fact": "committee_free_to_select_advisors", "eq": true},
+            {"fact": "committee_duty_of_care_met", "eq": true},
+            {"fact": "mom_condition_in_agreement", "eq": true},
+            {"fact": "mom_vote_informed", "eq": true},
+            {"fact": "mom_vote_uncoerced", "eq": true},
+            {"fact": "mom_approval_obtained", "eq": true}
+          ]
+        }
+      },
+      "scope_frame": {
+        "addressee_classes": ["controller"],
+        "transaction_types": ["other_controller_deal", "going_private"],
+        "applies_when": null,
+        "exceptions": [],
+        "non_application": null,
+        "defined_terms": {},
+        "jurisdiction": "US-DE",
+        "valid_from": "2014-01-01",
+        "valid_to": null,
+        "source_spans": [],
+        "audited": false
+      },
+      "valid_from": "2014-01-01",
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-approval",
+      "node_type": "Element",
+      "label": "Committee approval",
+      "props": {"fact_keys": ["committee_approval_obtained"], "met_when": {"fact": "committee_approval_obtained", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:mom-approval",
+      "node_type": "Element",
+      "label": "Majority-of-the-minority approval",
+      "props": {"fact_keys": ["mom_approval_obtained"], "met_when": {"fact": "mom_approval_obtained", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-independence",
+      "node_type": "Element",
+      "label": "Committee independence",
+      "props": {"fact_keys": ["committee_all_disinterested"], "met_when": {"fact": "committee_all_disinterested", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-power-to-say-no",
+      "node_type": "Element",
+      "label": "Committee power to say no",
+      "props": {"fact_keys": ["committee_power_to_say_no"], "met_when": {"fact": "committee_power_to_say_no", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-power-to-negotiate",
+      "node_type": "Element",
+      "label": "Committee power to negotiate",
+      "props": {"fact_keys": ["committee_power_to_negotiate"], "met_when": {"fact": "committee_power_to_negotiate", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-free-to-select-advisors",
+      "node_type": "Element",
+      "label": "Committee free to select advisors",
+      "props": {"fact_keys": ["committee_free_to_select_advisors"], "met_when": {"fact": "committee_free_to_select_advisors", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-duty-of-care",
+      "node_type": "Element",
+      "label": "Committee duty of care",
+      "props": {"fact_keys": ["committee_duty_of_care_met"], "met_when": {"fact": "committee_duty_of_care_met", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:committee-ab-initio",
+      "node_type": "Element",
+      "label": "Committee formed before substantive negotiation",
+      "props": {"fact_keys": ["committee_formed_before_substantive_negotiation"], "met_when": {"fact": "committee_formed_before_substantive_negotiation", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:mom-informed",
+      "node_type": "Element",
+      "label": "Informed minority vote",
+      "props": {"fact_keys": ["mom_vote_informed"], "met_when": {"fact": "mom_vote_informed", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:mom-uncoerced",
+      "node_type": "Element",
+      "label": "Uncoerced minority vote",
+      "props": {"fact_keys": ["mom_vote_uncoerced"], "met_when": {"fact": "mom_vote_uncoerced", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Element:disinterested-stockholder-approval",
+      "node_type": "Element",
+      "label": "Disinterested stockholder approval",
+      "props": {"fact_keys": ["disinterested_stockholder_approval_obtained"], "met_when": {"fact": "disinterested_stockholder_approval_obtained", "eq": true}},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Standard:business-judgment",
+      "node_type": "Standard",
+      "label": "Business judgment",
+      "props": {"value": "business_judgment"},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    },
+    {
+      "node_id": "Standard:entire-fairness",
+      "node_type": "Standard",
+      "label": "Entire fairness",
+      "props": {"value": "entire_fairness"},
+      "scope_frame": null,
+      "valid_from": null,
+      "valid_to": null,
+      "known_from": "2014-01-01",
+      "source_ids": [],
+      "origin": "seed",
+      "audited": false
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_94623511e68d5ae7",
+      "src": "Provision:de.dgcl.144b@2025-03-25",
+      "dst": "Holding:match-group-2024",
+      "edge_type": "superseded_by_statute",
+      "condition": {
+        "not": {
+          "fact": "litigation_commenced_on",
+          "lte": "2025-02-17"
+        }
+      },
+      "valid_from": "2025-03-25",
+      "valid_to": null,
+      "known_from": "2025-03-25",
+      "source_span": null,
+      "confidence": null,
+      "origin": "seed",
+      "audited": false,
+      "props": {}
+    }
+  ]
+}

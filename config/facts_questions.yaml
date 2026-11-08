@@ -1,0 +1,23 @@
+transaction_type: What type of transaction is under review?
+controller_present: Was a controller or control group present?
+controller_identity: Who was the controller or who comprised the control group?
+signing_date: When was the transaction agreement signed?
+announcement_date: When was the transaction publicly announced?
+closing_date: When did the transaction close, if it closed?
+litigation_commenced_on: When was stockholder litigation about the transaction filed, if any?
+interested_director_involved: Was an interested director involved in the transaction?
+special_committee_formed: Was a special committee formed?
+committee_all_disinterested: Were all special committee members disinterested?
+committee_power_to_say_no: Could the special committee reject the transaction?
+committee_power_to_negotiate: Could the special committee negotiate the transaction?
+committee_free_to_select_advisors: Could the special committee select its own advisers?
+committee_duty_of_care_met: What evidence shows whether the special committee met its duty of care?
+committee_formed_before_substantive_negotiation: Was the special committee formed before substantive negotiations?
+committee_approval_obtained: Did the special committee approve the transaction?
+mom_condition_in_agreement: Did the agreement require majority-of-the-minority approval?
+mom_vote_informed: Was the majority-of-the-minority vote informed?
+mom_vote_uncoerced: Was the majority-of-the-minority vote uncoerced?
+mom_approval_obtained: Was majority-of-the-minority approval obtained?
+disinterested_stockholder_approval_obtained: Did disinterested stockholders approve the transaction?
+disinterested_director_approval_obtained: Did disinterested directors approve the transaction?
+deal_value_usd: What was the transaction value in US dollars?
